@@ -1,0 +1,153 @@
+/* Content */
+.content {
+  width: 100%;
+  margin-top: 20px;
+  height: 76vh;
+  padding: 20px;
+  transition: margin-left 0.3s;
+}
+
+.rowDashboad {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 50vh;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    padding: 15px;
+  }
+
+  /* ================================== dashboad chart ================================*/
+  .graph-container {
+    width: 67%;
+    height: 277px;
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  .title {
+      /* text-align: center; */
+      font: bold 18px sans-serif;
+      color: black;
+      margin: 0;
+  }
+  .legend {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+  }
+  .legend-box {
+      width: 10px;
+      height: 10px;
+      background-color: #E0F7FA;
+      margin-right: 5px;
+  }
+  .legend span {
+      font: 12px sans-serif;
+      color: black;
+      text-transform: uppercase;
+  }
+  svg {
+      margin-top: 20px;
+      width: 100%;
+      /* width: auto; */
+      height: 217px;
+  }
+  .grid-line {
+      stroke: #E0E0E0;
+      stroke-width: 1px;
+  }
+  .axis {
+      stroke: black;
+      stroke-width: 1px;
+  }
+  .axis-label, .tick-label, .day-label {
+      font: 12px sans-serif;
+      fill: black;
+  }
+  .area {
+      fill: none;
+  }
+  .line {
+      stroke: #4DD0E1;
+      stroke-width: 2px;
+      fill: none;
+  }
+  .data-point {
+      fill: #4DD0E1;
+  }
+  /* =============================== end ===============================*/
+
+  .rowDashboad .graph-container h4 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .rowDashboad .graph-container p {
+    color: #666;
+    font-size: 16px;
+  }
+
+  .product, .graph-container, .column {  
+    border-radius: 10px;
+  }
+  
+  .product {
+    width: 28%;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Row using flexbox */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Each column*/
+  .column {
+    flex: 1 1 25%;
+    padding: 15px;
+  }
+  
+  /* Well styling for each info box */
+  .well {
+    background-color: #fff;
+    height: 15vh;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .well h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .well p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+/* ======================== footer ========================== */
+footer{
+  margin-top: 20px;
+  padding: 30px;
+  transition: margin-left 0.3s;
+}
+
+footer .footer {
+  display: flex;
+  margin-top: 20px;
+  height: 20vh;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  margin-top: -25px;
+  background-color: white;
+}
+
+/* ==================================== end ================================ */

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/Layout.css">
+    <style>
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+            height: 76vh;
+            padding: 20px;
+            transition: margin-left 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="../Deshboad/Layout.html"><img src="../../images/logo.jpg" alt="logo"></a>
+        <label for="sidebarToggle" class="menu-icon">&#9776;</label>
+        <div class="navleft">
+            <a href="../posts/post.html">
+                <button>
+                <b>Post</b>
+                </button>
+            </a>
+            <div class="notification-icon">
+                <i class="material-icons">notifications_none</i>
+                <span class="badge">3</span>
+            </div>
+            <img src="../../images/profile.jpg" alt="logo">
+        </div>
+    </div>
+
+    <!-- Sidebar Toggle Checkbox -->
+    <input type="checkbox" id="sidebarToggle">
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+        <a href="../Deshboad/Layout.html">
+            <i class="material-icons" class="menu1" style="font-size:48px;color:red">dashboard</i>
+        </a><hr>
+        <label for="menu2" class="menu1">
+            <i class="material-icons" style="font-size:48px;color:rgb(194, 0, 0)">menu</i>
+        </label><hr>
+        <label for="menu3" class="menu1">
+            <i class="material-icons" style="font-size:48px;color:rgb(194, 0, 0)">dashboard</i>
+        </label><hr>
+        <label for="menu4" class="menu1">
+            <i class="material-icons" style="font-size:48px;color:rgb(194, 0, 0)">dashboard</i>
+        </label><hr>
+        <label for="menu5" class="menu1">
+            <i class="material-icons" style="font-size:48px;color:rgb(194, 0, 0)">dashboard</i>
+        </label><hr>
+    </div>
+
+    <!-- Main Content -->
+    <div class="menu">
+        <input type="checkbox" id="menu2" class="menu-checkbox">
+        <input type="checkbox" id="menu3" class="menu-checkbox">
+        <input type="checkbox" id="menu4" class="menu-checkbox">
+        <input type="checkbox" id="menu5" class="menu-checkbox">
+    
+        <div class="submenu1">
+            <a href="./CreateProduct.html">Create Product</a>
+            <a href="#">All Products</a>
+            <a href="./Category.html">Category</a>
+        </div>
+    
+        <div class="submenu2">
+            <a href="../People/Customers.html">List Customer</a>
+            <a href="../People/Users.html">List User</a>
+        </div>
+    
+        <div class="submenu3">
+            <a href="./SystemSetting.html">System Settings</a>
+            <a href="./PosSetting.html">POS Settings</a>
+            <a href="./Currency.html">Currency</a>
+            <a href="#">Backup</a>
+        </div>
+        <div class="submenu4">
+            <a href="../Reports/SaleReport.html">Sale Report</a>
+            <a href="../Reports/ProductReport.html">Product Report</a>
+            <a href="../Reports/CustomerReport.html">Customer Report</a>
+            <a href="../Reports/TopSelling.html">Top Selling</a>
+            <a href="../Reports/BestCustomers.html">Best Customers</a>
+            <a href="../Reports/UserReport.html">User Report</a>
+        </div>
+        .<div class="content"> User </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d4d4d4;
+}
+
+/* ===================================== Navbar ================================*/
+.navbar {
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  height: 35px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+}
+
+.menu-icon {
+  font-size: 25px;
+  cursor: pointer;
+  padding: 10px;
+  color: rgba(216, 46, 51, 0.918);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.navbar p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ================================ end ============================== */
+
+#sidebarToggle {
+display: none;
+}
+
+/* ========================================= Sidebar ===========================*/
+.sidebar {
+  width: 0;
+  position: fixed;
+  left: 0;
+  top: 55px;
+  height: 93%;
+  overflow-x: hidden;
+  transition: 0.3s;
+  box-shadow: 4px 0 3px rgb(148, 148, 148);
+  background-color: rgb(218, 218, 218);
+}
+
+.menu1{
+background-color: white;
+}
+
+.sidebar a {
+  padding: 15px;
+  display: block;
+  text-decoration: none;
+}
+.sidebar hr {
+  margin: 0;
+}
+
+.sidebar a:hover {
+  background-color: #00796B;
+}
+
+/* Toggle Sidebar */
+#sidebarToggle:checked ~ .sidebar {
+  width: 80px;
+}
+
+/* Close Button Inside Sidebar */
+.sidebar .close-btn {
+  display: block;
+  text-align: right;
+  padding-right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#sidebarToggle:checked ~ .menu,
+#sidebarToggle:checked ~ footer {
+  margin-left: 100px;
+}
+
+/* =========================================== end ====================================== */
+
+/* ========================================== navleft =====================================*/
+.navleft {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-left: 20%;
+  height: 55px;
+  width: 100%;
+}
+
+.navbar .navleft img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  border-radius: 60%;
+  margin-right: 40px;
+}
+
+.notification-icon {
+  position: relative;
+  font-size: 30px;
+  cursor: pointer;
+  color:red;
+}
+
+/* Notification Badge */
+.notification-icon .badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px;
+  font-size: 10px;
+}
+
+/* button Post */
+.navleft button {
+  padding: 7px;
+  margin-right: 30px;
+  width: 70px;
+  border-radius: 20px;
+  border: 2px solid rgba(216, 46, 51, 0.918);
+}
+
+.navleft button:hover{
+  background-color: rgba(216, 46, 51, 0.918);
+  color: white;
+}
+ 
+/* navbar */
+.navbar img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  border-radius: 60%;
+  margin-left: 20px;
+}
+
+/* ========================================== end ================================= */
+
+/* =========================== Responsive adjustment for smaller screens ===============*/
+@media screen and (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+  .column {
+    flex: 1 1 100%;
+  }
+}
+/* ========================= end =================== */
+
+/* ======================== menu checkbox ========================= */
+.menu-checkbox{
+display: none;
+}
+
+.menu-checkbox:checked ~ .submenu {
+  display: block;
+}
+
+.menu #menu1:checked ~ .submenu {
+  margin-right: -100px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+label i {
+  margin-right: 10px;
+}
+
+.menu{
+  display: flex;
+  position: relative;
+  height: auto;
+}
+
+.submenu, .submenu1, .submenu2, .submenu3, .submenu4 {
+  position: absolute;
+  top: 47px;
+  left: 0;
+  width: 200px;
+  margin-left: -28px;
+  height: 80vh;
+  background: #444;
+  z-index: 1000;
+  display: none;
+}
+
+.submenu a, .submenu1 a, .submenu2 a, .submenu3 a, .submenu4 a {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu #menu1:checked ~ .submenu ,
+.menu #menu2:checked ~ .submenu1,
+.menu #menu3:checked ~ .submenu2,
+.menu #menu4:checked ~ .submenu3,
+.menu #menu5:checked ~ .submenu4{
+  display: block;
+}
+
+/* ============================== end ========================== */
